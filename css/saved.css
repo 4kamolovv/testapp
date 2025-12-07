@@ -1,0 +1,102 @@
+.content-header-ss {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    padding: 7px 15px;
+    border-radius: 15px;
+}
+
+
+.content-title-ss {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.wrappercards {
+    margin-top: 20px;
+}
+
+/* Test card container */
+.test-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Test card */
+.test-card {
+  width: 284px;
+  height: 168px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.test-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Test card top section */
+.test-card-top-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.test-card-subject {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.test-bookmark-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Test card title */
+.test-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-top: 8px;
+}
+
+/* Test card footer */
+.test-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.test-card-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.test-icon {
+  width: 20px;
+  height: 20px;
+}

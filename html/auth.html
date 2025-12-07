@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>📚 test.uz – Online Testlar va DTM Tayyorlov! 🚀</title>
+    <link rel="site icon" type="png" href="../images/icons/logoiconsite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;800;900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Orqaga qaytish tugmasi -->
+        <div class="backto-mainpage-wrapper">
+            <div class="bck-pointer">
+                <img
+                class="backto-mainpage-icon"
+                src="../images/icons/backicon.svg"
+                alt=""
+                />
+                <h3 class="backto-mainpage-p">Orqaga qaytish</h3>
+            </div>
+        </div>
+        
+        
+        <div class="auth-container">
+            <div class="auth-box">
+                
+                <h2 class="auth-title">Saytga Kirish</h2>
+                
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="login" class="form-label">Login</label>
+                        <input type="text" id="login" class="form-input" placeholder="Loginni kiriting" required list="loginOptions">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password" class="form-label">Parol</label>
+                        <input type="password" id="password" class="form-input" placeholder="Parolni kiriting" required>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">
+                        <img src="../images/icons/loginicon.svg" alt="" class="btn-icon">
+                        Kirish
+                    </button>
+                </form>
+                
+                <div class="auth-bottom">
+                    <span>Yangi foydalanuvchimisiz?</span>
+                    <button id="createAccountBtn" class="link-btn">Hisob ochish</button>
+                </div>
+            </div>
+            
+            <!-- Email bosqichi -->
+            <div class="auth-box hidden" id="emailStep">
+                <h2 class="auth-title">Email orqali ro'yxatdan o'tish</h2>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email manzilingiz</label>
+                    <input type="email" id="email" class="form-input" placeholder="youremail@gmail.com" required>
+                </div>
+                <button id="verifyEmailBtn" class="auth-button">Davom etish</button>
+                <div class="auth-info hidden" id="emailConfirmed">
+                    <img src="../images/icons/trueicon.webp" alt="Tasdiqlandi" class="confirm-icon" />
+                    <span>Emailingiz tasdiqlandi!</span>
+                </div>
+            </div>
+            
+            <!-- Login va parol yaratish -->
+            <div class="auth-box hidden" id="registerStep">
+                <h2 class="auth-title">Hisob ochish</h2>
+                
+                <div class="form-group">
+                    <label for="newLogin" class="form-label">Login</label>
+                    <input type="text" id="newLogin" class="form-input" placeholder="Login tanlang" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="newPassword" class="form-label">Parol</label>
+                    <input type="password" id="newPassword" class="form-input" placeholder="Parol yarating" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Parolni tasdiqlang</label>
+                    <input type="password" id="confirmPassword" class="form-input" placeholder="Parolni qayta kiriting" required>
+                </div>
+                
+                <button id="registerBtn" class="auth-button">Hisobni yaratish</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/auth-handler.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

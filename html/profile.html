@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <title>📚 test.uz – Profil</title>
+    <link rel="site icon" type="png" href="../images/icons/logoiconsite.svg" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;800;900&display=swap"
+    rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+</head>
+<body>
+    <div id="progress-bg"></div>
+    <div id="progress-bar"></div>
+    <!-- LOADING BAR -->
+    
+    <header class="header">
+        <div class="container-header">
+            <div class="header-wrapper">
+                <div class="header-top-wrap">
+                    <a href="../index.html" class="logo-wrapper"
+                    ><img class="logo" src="../images/image/logotestuz.png" alt=""
+                    /></a>
+                    <div class="login-wrap"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="header-line-hr" />
+        <div class="container-header">
+            <div class="header-bottom-wrap">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link index-navlink">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/themetest.html" class="nav-link theme-navlink">Mavzuli test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./oligoh.html" class="nav-link">Oliygohlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./yangliklar.html" class="nav-link">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hususi.html" class="nav-link">Xususiy Universitetlar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="container">
+        <div class="bck-pointer">
+            <h3 class="backto-mainpage">Profile</h3>
+        </div>
+        <div class="profile">
+            <div class="profile-wrapper">
+                <div class="profile-st-wrap">
+                    <div class="wrap-profile-phuser">
+                        <img class="profile-photo" src="../images/image/prifilephoto.png" alt="">
+                        <div id="username" class="username-div"></div>
+                    </div>
+                    <div class="wrap-level">
+                        <img src="../images/image/Levelbadge.svg" alt="">
+                        <div class="wrapleveldaraja">
+                            <p class="daraja-title">Daraja</p>
+                            <div class="daraja-xp-wrap">
+                                <p class="daraja-desc">Keyingi daraja: 213</p>
+                                <img src="../images/icons/xpicon.svg" alt="">
+                                <p class="XP-blue">XP</p>
+                            </div>
+                            <div class="level-div">
+                                <div class="levelgreenshablon"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="./testpro.html" class="btn-pro">XP PRO</a>
+                </div>
+                <div class="profile-sc-wrap">
+                    <div class="user-activity">
+                        <div class="div-text"><h3 class="div-txt-text">So‘nggi faoliyatlar</h3></div>
+                        <div class="user-activity-ul">
+                            <ul id="activityList">
+                                <!-- Faoliyatlar ro‘yxati -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const activityList = document.getElementById("activityList");
+            const activities = [
+            "Test 1: Ingliz tili (92% natija)",
+            "Test 2: Tarix (80% natija)",
+            "Test 3: Biologiya (88% natija)",
+            "Test 4: Matematika (95% natija)",
+            "Test 5: Fizika (87% natija)",
+            "Test 6: Geografiya (75% natija)",
+            "Test 7: O'zbek tili (85% natija)",
+            "Test 8: Psixologiya (90% natija)"
+            ];
+            
+            activities.forEach(activity => {
+                const li = document.createElement("li");
+                li.textContent = activity;
+                activityList.appendChild(li);
+            });
+        });
+        
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

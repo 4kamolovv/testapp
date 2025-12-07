@@ -1,0 +1,127 @@
+.bck-pointer {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.auth-box {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.confirm-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.auth-logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 80px;
+}
+
+.auth-title {
+  text-align: center;
+  color: #105ea6;
+  margin-bottom: 20px;
+}
+
+.auth-form .form-group,
+#emailStep .form-group,
+#registerStep .form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #0f9b8e;
+  outline: none;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 13px;
+  background-color: #30cf30;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #28b428;
+}
+
+.auth-bottom {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #0078d4;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 5px;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.link-btn:hover {
+  color: #005999;
+  text-decoration: underline;
+}
+
+.auth-info {
+  margin-top: 10px;
+  color: #0f9b8e;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}

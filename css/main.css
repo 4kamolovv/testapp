@@ -1,0 +1,290 @@
+/* Har doim scroll bar joyi saqlansin */
+html {
+  scrollbar-gutter: stable;
+}
+
+/* Scroll bar: vertikal va gorizontal */
+::-webkit-scrollbar {
+  width: 4px; /* vertikal */
+  height: 15px; /* gorizontal */
+}
+
+/* Scrollbar orqa fon (kanal) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Scrollbar “thumb” – harakatlanadigan qismini bezatish */
+::-webkit-scrollbar-thumb {
+  background-color: #00c853;
+  border-radius: 10px;
+}
+
+/* === Umumiy sozlamalar === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f6f7fb;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 1240px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+/* test */
+/* fan nomi */
+.quiz-subject {
+  display: inline-block;
+  background-color: #f1f1f1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 7px;
+}
+/* test nima xaqidaligi */
+.quiz-info-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #000;
+}
+/* test */
+
+/* loading bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background-color: #00c853;
+  width: 0%;
+  z-index: 9999;
+  transform-origin: left;
+}
+
+#progress-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+  z-index: 9998;
+}
+/* loading bar */
+
+.logo-wrapper {
+  width: 144px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-wrapper img {
+  transform: scale(0.15);
+  transform-origin: center;
+}
+
+.login-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 98px;
+  height: 36px;
+  padding: 6px 10px;
+  gap: 4px;
+  color: #fff;
+  background-color: #00c950;
+  border: 2px solid #00c950;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background-color: #49d782;
+}
+
+/* Profile dropdown button */
+.profile-btn-img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.profile-btn-img:hover {
+  background-color: #f1f1f1;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.chevron-icon {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  z-index: 999;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  right: 0;
+  width: 220px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 6px 0;
+  z-index: 999;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #f8f8f8;
+}
+
+.logout-btn {
+  border-top: 1px solid #eee;
+  margin-top: 4px;
+}
+
+/* header */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 10px;
+}
+
+.container-header {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column; /* bu pastga qarab joylashishini ta’minlaydi */
+  gap: 10px;
+}
+
+.header-top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-bottom-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1e2939;
+  font-weight: 500;
+  transition: color 0.1s ease;
+  font-weight: 500;
+  font-size: 14.5px;
+}
+
+.nav-link:hover {
+  color: #00a63e;
+}
+
+.header-line-hr {
+  width: 100%;
+  height: 1px !important;
+  padding: 0;
+  margin-block: 8px;
+  background-color: #e5e7eb;
+}
+
+hr {
+  margin-block: 8px;
+}
+/* header */
+
+
+
+/* footer */
+/* footer */

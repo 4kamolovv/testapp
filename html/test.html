@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Mavzuli testlar</title>
+  <link rel="site icon" type="png" href="../images/icons/logoiconsite.svg" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;800;900&display=swap"
+  rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/test.css" />
+</head>
+<body>
+  <div id="progress-bg"></div>
+  <div id="progress-bar"></div>
+  <!-- LOADING BAR -->
+  
+  <header class="header">
+    <div class="container-header">
+      <div class="header-wrapper">  
+        <div class="header-top-wrap">
+          <a href="../index.html" class="logo-wrapper"
+          ><img class="logo" src="../images/image/logotestuz.png" alt=""
+          /></a>
+          <div class="login-wrap"></div>
+        </div>
+      </div>
+    </div>
+    <hr class="header-line-hr" />
+    <div class="container-header">
+      <div class="header-bottom-wrap">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link index-navlink">Bosh sahifa</a>
+          </li>
+          <li class="nav-item">
+            <a href="../html/themetest.html" class="nav-link theme-navlink">Mavzuli test</a>
+          </li>
+          <li class="nav-item">
+            <a href="./" class="nav-link">Oliygohlar</a>
+          </li>
+          <li class="nav-item">
+            <a href="./" class="nav-link">Yangiliklar</a>
+          </li>
+          <li class="nav-item">
+            <a href="./" class="nav-link">Xususiy Universitetlar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <div class="container">
+    <div class="backto-mainpage-wrapper">
+      <div class="bck-pointer">
+        <img
+        class="backto-mainpage-icon"
+        src="../images/icons/backicon.svg"
+        alt=""
+        />
+        <h3 class="backto-mainpage-p">Orqaga qaytish</h3>
+      </div>
+    </div>
+    
+    <div class="quiz-layout">
+      <div>
+        <div class="quiz-info-card">
+          <div class="quiz-subject"></div>
+          <div class="quiz-info-title"></div>
+          <div class="quiz-info-footer">
+            <div class="quiz-info-stat">
+              <img
+              class="quiz-info-icon"
+              src="../images/icons/staricon.svg"
+              alt="Reyting"
+              />
+              <p class="quiz-info-text test-reviews">4.26</p>
+            </div>
+            <div class="quiz-info-stat">
+              <img
+              class="quiz-info-icon"
+              src="../images/icons/quantityicon.svg"
+              alt="Test soni"
+              />
+              <p class="quiz-info-text test-amount"></p>
+            </div>
+            <div class="quiz-info-stat">
+              <img
+              class="quiz-info-icon"
+              src="../images/icons/viewsicon.svg"
+              alt="Ko‘rilgan"
+              />
+              <p class="quiz-info-text test-views">422</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="progress-card">
+          <h3 class="progress-title">Savollar</h3>
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-bar-text" id="progress-text"></div>
+        </div>
+      </div>
+      
+      <!-- QUIZ SECTION -->
+      <div class="quiz-container">
+        <div class="quiz-question-box">
+          <div class="quiz-question-header">
+            <span class="quiz-question-progress"></span>
+            <div class="quiz-tmsb-wrap">
+              <div class="quiz-time" id="quizTime">00:00</div>
+              <div class="quiz-subject"></div>
+            </div>
+          </div>
+          <div class="quiz-question-text"></div>
+        </div>
+        
+        <div class="quiz-options-box">
+          <img class="quiz-options-pic" src="" alt="" />
+          
+          <button class="quiz-option">
+            <span class="quiz-label">a)</span>
+            <span class="quiz-variant"></span>
+          </button>
+          <button class="quiz-option">
+            <span class="quiz-label">b)</span>
+            <span class="quiz-variant"></span>
+          </button>
+          <button class="quiz-option">
+            <span class="quiz-label">c)</span>
+            <span class="quiz-variant"></span>
+          </button>
+          <button class="quiz-option">
+            <span class="quiz-label">d)</span>
+            <span class="quiz-variant"></span>
+          </button>
+          
+          <div class="quiz-controls">
+            <button class="btn-complete">Yakunlash</button>
+            <div class="answerstatus-check-wrapper">
+              <div class="answer-status"></div>
+              <button class="btn-check">Tekshirish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- MODAL: YAKUNLASHNI TASDIQLASH -->
+  <div class="modal-overlay" id="endModal">
+    <div class="modal-box">
+      <img
+      class="yakunlash-image"
+      src="../images/icons/complateredicon.png"
+      alt="Warning icon"
+      />
+      <h4 class="modal-title">Testni yakunlashni xohlaysizmi?</h4>
+      <p class="modal-desc">
+        Yakunlaganingizdan so‘ng javoblaringizni o‘zgartira olmaysiz. Davom
+        etishni istaysizmi?
+      </p>
+      <div class="modal-actions">
+        <button id="cancelEnd" class="btn-cancel">Bekor qilish</button>
+        <button id="confirmEnd" class="btn-ok">Yakunlash</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal-overlay" id="resultModal">
+    <div class="modal-box result-modal-box">
+      <h4 class="result-title-h">Yakuniy natijalar</h4>
+      <img
+      class="result-icon-main"
+      src="../images/icons/happy-result.webp"
+      alt="natija"
+      />
+      <h2 class="result-user" id="username">O'quvchi_8848756415</h2>
+      <div class="result-summary">
+        <div class="result-stat">
+          <div class="result-icon-text">
+            <img
+            src="../images/icons/alltests.png"
+            alt=""
+            class="result-icon-small"
+            />
+            <b id="totalCount">15</b>
+          </div>
+          <span>Jami test</span>
+        </div>
+        <div class="result-stat">
+          <div class="result-icon-text">
+            <img
+            src="../images/icons/trueicon.webp"
+            alt=""
+            class="result-icon-small"
+            />
+            <b class="correct-text" id="correctCount">0</b>
+          </div>
+          <span>To‘g‘rilar</span>
+        </div>
+        <div class="result-stat">
+          <div class="result-icon-text">
+            <img
+            src="../images/icons/falseicon.png"
+            alt=""
+            class="result-icon-small"
+            />
+            <b class="wrong-text" id="wrongCount">0</b>
+          </div>
+          <span>Xatolar</span>
+        </div>
+      </div>
+      <div class="result-topic" id="resultTopic">Fan nomi va mavzusi</div>
+      <div class="result-time" id="resultTime">qancha vaqit ketgani</div>
+      <div class="result-actions">
+        <button class="back-tomain-page">Asosiy sahifaga</button>
+        <button id="restartBtn" class="btn-confirm">Qayta ishlash</button>
+      </div>
+    </div>
+  </div>
+  
+  <audio id="correctSound" src="../sounds/correct-answer.mp3"></audio>
+  <audio id="wrongSound" src="../sounds/wrong-answer.mp3"></audio>
+  
+  <!-- js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+  <script src="../js/quiz.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
