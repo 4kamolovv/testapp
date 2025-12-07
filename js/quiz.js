@@ -1,5 +1,5 @@
 // ===================== test.json fayldan ma'lumotni yuklash =====================
-fetch("https://4kamolov.github.io/docs/data/data.json")
+fetch("https://4kamolovv.github.io/docs/data/data.json")
   .then((res) => {
     if (!res.ok) throw new Error("Ma'lumotni yuklashda xatolik yuz berdi");
     return res.json();

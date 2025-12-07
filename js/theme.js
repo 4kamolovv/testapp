@@ -76,7 +76,7 @@ function getRandomNumber(min, max) {
 }
 
 // JSON dan testlarni yuklash
-fetch("https://4kamolov.github.io/docs/data/data.json")
+fetch("https://4kamolovv.github.io/docs/data/data.json")
   .then(response => response.json())
   .then(test => {
     allTests = test;
